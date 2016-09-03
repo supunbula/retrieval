@@ -1,5 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("font-awesome.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css");
 
 /*
 	Big Picture by HTML5 UP
@@ -24,6 +24,7 @@
 
 	body {
 		line-height: 1;
+        background-color:#ADD8E6 !important;
 	}
 
 	ol, ul {
@@ -55,6 +56,9 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+
+    /* Center Float*/
+
 
 /* Containers */
 
@@ -256,6 +260,11 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+    .row .center-float {
+    float:none;
+    display:inline-block;
+    }
+
 
 	.row:after, .row:before {
 		content: '';
@@ -1946,7 +1955,7 @@
 
 		.image img {
 			display: block;
-			width: 100%;
+			
 		}
 
 		.image.featured {
@@ -2178,7 +2187,7 @@
 			height: 5em;
 			line-height: 4.5em;
 			padding: 0;
-			background-image: url("images/dark-arrow.svg");
+			background-image: url("images/dark-arrow.svg2");
 			background-position: center center;
 			background-repeat: no-repeat;
 			text-indent: -10em;
@@ -2752,7 +2761,7 @@
 			font-weight: normal;
 			text-transform: none !important;
 			color: #ececec;
-			content: '\f1ce';
+			/*content: '\f1ce';*/
 			cursor: default;
 			display: block;
 			font-size: 2em;
@@ -2840,8 +2849,7 @@
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: #fff;
-		background: rgba(255, 255, 255, 0.95);
+		background-color:#ADD8E6 !important;
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -2854,8 +2862,9 @@
 	#logo {
 		position: absolute;
 		left: 1em;
-		top: 0;
-		height: 3em;
+		top: 5px;
+        margin-top:-30px;
+		height: 100px;
 		line-height: 3em;
 		letter-spacing: -1px;
 	}
@@ -2870,6 +2879,8 @@
 		top: 0;
 		height: 3em;
 		line-height: 3em;
+        background-color:#1C50BF;
+        color:white;
 	}
 
 		#nav ul {
@@ -2891,33 +2902,37 @@
 					padding: 0 0.5em 0 0.5em;
 					outline: 0;
 				}
+                #nav ul li a:hover {
+					color:black;
+				}
 
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
+		background: url("../../images/intro.png");
+		background-size: 750px 430px;
+		background-attachment: fixed;
+		background-position: center right;
+		background-repeat: no-repeat;
 	}
 
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url("../../images/one.png");
+		background-size:600px 393px;
+		background-attachment: fixed;
+		background-position: center left;
+        background-repeat: no-repeat;
 	}
 
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
+		background: url("../../images/two.png");
+		background-size: 300px 310px;
+		background-position: top right;
+		background-repeat: no-repeat;
 	}
 
 /* Work */
@@ -2988,7 +3003,7 @@
 		height: 5em;
 		line-height: 5em;
 		margin: 0;
-		background: #39454b;
+        background-color:#5C7DC3;
 		color: #999;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
@@ -3443,7 +3458,8 @@
 				position: relative;
 				left: 0;
 				top: 0;
-				height: 2.5em;
+				margin-top:-15px;
+                height: 115px;
 				line-height: 2.5em;
 			}
 
